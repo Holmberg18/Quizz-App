@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<title>DC Comics Character Quiz</title>
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/style.css"/> 
+	</head>
+	<body>
+		
+		<header> <!--Header -->
+		</header>
+    
+    <h1>DC Comics Character Quiz</h1>
+    
+    <section class="character-picture">
+      <h3>Guess the Character</h3>
+      <div class="pic-container">
+        <img src="http://img2.timeinc.net/people/i/2015/news/150914/super-cara-435.jpg">
+      </div>    
+    </section>
+
+		<section class="game">
+      <h3>Choices</h3>
+		  <div class="choices">
+        <ul>
+          <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Wonder Woman</label><br/>
+          <input type="radio" name="q2" value="b" id="q1b"><label for="q1b">Poison Ivy</label><br/> 
+          <input type="radio" name="q3" value="c" id="q1c"><label for="q1c">Enchantress</label><br/> 
+          <input type="radio" name="q4" value="d" id="q1d"><label for="q1d">Talia Al Ghoul</label><br/> 
+        </ul>
+      </div>
+		</section>
+    
+    <section class="question-status">
+      <h3>Questions Answered: <span id="count">0</span></h3>
+      <h3>Questions Remaining: <span id="count">10</span></h3>
+    </section>
+		
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
