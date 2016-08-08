@@ -1,7 +1,7 @@
 body{
   background-image:url("http://insidepulse.com/wp-content/uploads/2016/05/DC-Comics-2016-new-logo-black-and-white-banner.jpg");
   background-repeat:no-repeat;
-  background-size: 130em 70em;
+  background-size: 120em 70em;
 }
 
 h1 {
@@ -11,12 +11,41 @@ h1 {
     font-size: 300%;
 }
 
-h3 {
+h2, h3 {
 /*   display:inline-block; */
   color:white;
   font-family: 'Permanent Marker', cursive;
   font-size: 200%;
   
+}
+
+p {
+	color:white;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+}
+
+button {
+
+
+font-family: 'Permanent Marker', cursive;
+border-radius: 8px;
+background-color: white;
+border:none;
+color: black;
+text-align:center;
+padding: 15px 32px;
+text-decoration: none;
+display: inline-block;
+font-size: 1em;
+margin: 50px 2px;
+cursor: pointer;
+
+}
+
+.intro-screen {
+text-align: center;
+
 }
 
 .game {
