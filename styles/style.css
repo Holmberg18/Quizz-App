@@ -30,6 +30,12 @@ h3 {
   float:left;
 }
 
+.pic-container {
+	max-height: 600px;
+	max-width: 400px;
+
+}
+
 label{
   color:white;
   font-family: 'Permanent Marker', cursive;
