@@ -7,10 +7,14 @@
 		<meta charset="utf-8"/>
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="styles/style.css"/> 
+		
+		
 	</head>
 	<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		
 		<header> <!--Header -->
+		
 		</header>
     
     <h1>DC Comics Character Quiz</h1>
@@ -18,66 +22,81 @@
 	<section class="intro-screen">
 		<h2>Welcome to the DC Comics Character Quiz!</h2>
 		<p>Guess the names of these 10 DC Comic Characters!</p>
-		<button>Start</button>
+		<button name="startButton" class="startButton" type="button">Start</button>
 	</section>
     
     <section class="character-picture">
+	
 	 <h3>Guess the Character</h3>
-	<div id="character_1">
+	 <script type="text/javascript"> $(".character-picture > h3").hide(); </script>
+	<div class="character_1">
 		  <div class="pic-container">
 			<img src="http://img2.timeinc.net/people/i/2015/news/150914/super-cara-435.jpg">
 		  </div>
 	</div>
-		<div id="character_2">
+	<script type="text/javascript"> $(".character_1").hide(); </script>
+ 		<div class="character_2">
 		  <div class="pic-container">
 			<img src="https://images5.alphacoders.com/371/371929.jpg">
 		  </div>
 	</div>
-		<div id="character_3">
+		<script type="text/javascript"> $(".character_2").hide(); </script>
+			<div class="character_3">
 		  <div class="pic-container">
 			<img src="http://static3.comicvine.com/uploads/scale_small/10/105264/4376573-9575308b2ac1f68c7f7f376ac9a61c33.jpg">
 		  </div>
-	</div>
-		<div id="character_4">
+			<script type="text/javascript"> $(".character_3").hide(); </script>
+		</div>
+		<div class="character_4">
 		  <div class="pic-container">
 			<img src="http://static5.comicvine.com/uploads/original/2/24477/1218703-batwoman.jpg">
 		  </div>
 	</div>
-		<div id="character_5">
+		<script type="text/javascript"> $(".character_4").hide(); </script>
+			<div class="character_5">
 		  <div class="pic-container">
 			<img src="images/takes-command.png">
 		  </div>
 	</div>
-		<div id="character_6">
+		<script type="text/javascript"> $(".character_5").hide(); </script>
+			<div class="character_6">
 		  <div class="pic-container">
 			<img src="images/goodbye_batman.jpg">
 		  </div>
 	</div>
-		<div id="character_7">
+		<script type="text/javascript"> $(".character_6").hide(); </script>
+			<div class="character_7">
 		  <div class="pic-container">
 			<img src="images/gotham-knight.jpg">
 		  </div>
 	</div>
-		<div id="character_8">
+		<script type="text/javascript"> $(".character_7").hide(); </script>
+			<div class="character_8">
 		  <div class="pic-container">
 			<img src="images/assassin.jpg">
 		  </div>
 	</div>
-		<div id="character_9">
+		<script type="text/javascript"> $(".character_8").hide(); </script>
+			<div class="character_9">
 		  <div class="pic-container">
 			<img src="images/the-leader.png">
 		  </div>
 	</div>
-		<div id="character_10">
+		<script type="text/javascript"> $(".character_9").hide(); </script>
+			<div class="character_10">
 		  <div class="pic-container">
 			<img src="images/in-the-deep.jpg">
 		  </div>
 	</div>
+		<script type="text/javascript"> $(".character_10").hide(); </script> -->
     </section>
+	 <script type="text/javascript"> $(".character-picture").children().hide(); </script>
+	
 
 		<section class="game">
+			<script type="text/javascript"> $(".game").hide(); </script>
       <h3>Choices</h3>
-	  <div id="q1">
+	  <div class="q1">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Wonder Woman</label><br/>
@@ -87,7 +106,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q2">
+	    <div class="q2">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Talia Al Ghoul</label><br/>
@@ -97,7 +116,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q3">
+	    <div class="q3">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Dawnstar</label><br/>
@@ -107,7 +126,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q4">
+	    <div class="q4">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Batgirl</label><br/>
@@ -117,7 +136,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q5">
+	    <div class="q5">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Dawnstar</label><br/>
@@ -127,7 +146,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q6">
+	    <div class="q6">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Jonah Hex</label><br/>
@@ -137,7 +156,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q7">
+	    <div class="q7">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Deathstroke</label><br/>
@@ -147,7 +166,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q8">
+	    <div class="q8">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Deadshot</label><br/>
@@ -157,7 +176,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q9">
+	    <div class="q9">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Cir-El</label><br/>
@@ -167,7 +186,7 @@
 			</ul>
 		  </div>
 	  </div>
-	    <div id="q10">
+	    <div class="q10">
 		  <div class="choices">
 			<ul>
 			  <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Bane</label><br/>
@@ -180,11 +199,13 @@
 		</section>
     
     <section class="question-status">
+		<script type="text/javascript"> $(".question-status").hide(); </script>
       <h3>Questions Answered: <span id="count">0</span></h3>
       <h3>Questions Remaining: <span id="count">10</span></h3>
     </section>
 	
 	<section class="results">
+		<script type="text/javascript"> $(".results").hide(); </script>
 		<h2>Your results are: </h2>
 		<p><span id="correct-count">0</span> correct and <span id="wrong-count">0</span> wrong.</p>
 		<button>Try again?</button>
@@ -192,7 +213,6 @@
     
 		
 		<!-- JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>

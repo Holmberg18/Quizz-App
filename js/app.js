@@ -1,10 +1,20 @@
 
+
+
 $(document).ready(function(){
 
-$(".character-picture").hide();
-$(".game").hide();
-$(".question-status").hide();
-$(".results").hide();	
+	
+$(".startButton").click(function(){
+	$(".intro-screen").hide();
+	$(".character-picture h3").show();
+	$(".character_1").show();
+	$(".game").show();
+	$(".game").children().hide();
+	$(".q1").show();
+	$(".game > h3").show();
+	
+	
+});
 
-
+return false;
 });
