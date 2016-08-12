@@ -33,14 +33,22 @@ border-radius: 8px;
 background-color: white;
 border:none;
 color: black;
-text-align:center;
 padding: 15px 32px;
 text-decoration: none;
-display: inline-block;
 font-size: 1em;
 margin: 50px 2px;
 cursor: pointer;
 
+}
+
+.startButton {
+	text-align:center;
+	display: inline-block;
+}
+.flexButton{
+	display:flex;
+	flex-direction: row-reverse;
+	padding-top:25em;
 }
 
 .intro-screen {
