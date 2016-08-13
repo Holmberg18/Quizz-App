@@ -35,16 +35,19 @@
 	<div class="game">
 	  <div class="question-choices">
 			<ul>
-			  <input type="radio" name="q1" value="0" id="q0"><label for="q1a"></label><br/>
-			  <input type="radio" name="q2" value="1" id="q1"><label for="q1b"></label><br/> 
-			  <input type="radio" name="q3" value="2" id="q2"><label for="q1c"></label><br/> 
-			  <input type="radio" name="q4" value="3" id="q3"><label for="q1d"></label><br/> 
+			<form action="">
+				<input type="radio" name="q1" value="0" id="q0"><label for="q1a"></label><br/>
+				<input type="radio" name="q1" value="1" id="q1"><label for="q1b"></label><br/>
+				<input type="radio" name="q1" value="2" id="q2"><label for="q1c"></label><br/> 
+				<input type="radio" name="q1" value="3" id="q3"><label for="q1d"></label><br/>  
+			</form>
 			</ul>
+			<div class="flexButton">
+				<button name="nextButton" class="nextButton" type="button">Next Question</button>
+			</div>
 	  </div>
 	  
-	  <div class="flexButton">
-	  <button name="nextButton" class="nextButton" type="button">Next Question</button>
-	  </div>
+	  
 	  
 	</div>
 	<script>$(".game").hide();</script>

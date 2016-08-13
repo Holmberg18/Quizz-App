@@ -40,15 +40,17 @@ margin: 50px 2px;
 cursor: pointer;
 
 }
+img {
+max-width:500px;
+max-height:600px;
+}
 
 .startButton {
 	text-align:center;
 	display: inline-block;
 }
 .flexButton{
-	display:flex;
-	flex-direction: row-reverse;
-	padding-top:25em;
+	text-align:right;
 }
 
 .intro-screen {
@@ -90,3 +92,28 @@ input {
   top:40em;
   left:90em;
 }
+
+
+/* 
+.checkbox, .radio {
+  width: 19px;
+  height: 25px;
+  padding: 0 5px 0 0;
+  background: url(checkbox.png) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
+input  {
+  background: url("images/empty-radiobutton-128.png") no-repeat;
+}
+.select {
+  position: absolute;
+  width: 158px;
+  height: 21px;
+  padding: 0 24px 0 8px;
+  color: #fff;
+  font: 12px/21px arial,sans-serif;
+  background: url(select.png) no-repeat;
+  overflow: hidden;
+} */
