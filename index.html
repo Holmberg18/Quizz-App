@@ -32,7 +32,7 @@
 		 
 	</div>
     
-	<div class="game">
+	<div class="game" style="display:inline-block;width:50%;box-sizing:border-box;">
 	  <div class="question-choices">
 			<ul>
 			<form action="">
@@ -227,14 +227,14 @@
     <section class="question-status">
 		<script type="text/javascript"> $(".question-status").hide(); </script>
       <h3>Questions Answered: <span id="count">0</span></h3>
-      <h3>Questions Remaining: <span id="count">10</span></h3>
+      <h3>Questions Remaining: <span id="count-left">10</span></h3>
     </section>
 	
 	<section class="results">
 		<script type="text/javascript"> $(".results").hide(); </script>
 		<h2>Your results are: </h2>
 		<p><span id="correct-count">0</span> correct and <span id="wrong-count">0</span> wrong.</p>
-		<button>Try again?</button>
+		<button name="tryAgain" class="tryAgain" type="button">Try again?</button>
 	</section>
     
 		
