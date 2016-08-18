@@ -7,6 +7,7 @@ $(document).ready(function(){
 // $(".character-picture").hide();
 		var currentQuestion = 0;
 		var questionArr = [];
+		var countCorrect = 0;
 		questionArr.push({ image: "http://img2.timeinc.net/people/i/2015/news/150914/super-cara-435.jpg", answers: ["Wonder Woman","Poison Ivy","Enchantress","Talia Al Ghoul"], correctAnswer:2});	//question 1
 		questionArr.push({ image: "https://images5.alphacoders.com/371/371929.jpg", answers: ["Talia Al Ghoul","Zatanna","Black Canary","Huntress"], correctAnswer:1});
 		questionArr.push({ image: "http://static3.comicvine.com/uploads/scale_small/10/105264/4376573-9575308b2ac1f68c7f7f376ac9a61c33.jpg", answers: ["Dawnstar","Mera","Phantom Lady","Cir-El"], correctAnswer:1});
@@ -20,6 +21,19 @@ $(document).ready(function(){
 		
 	function updateView() {	
 	
+		$("#correct-count").html(countCorrect);
+		$("#count").html(currentQuestion);
+		$("#wrong-count").html(currentQuestion - countCorrect);
+		$("#count-left").html(10 - currentQuestion);
+		
+		if (currentQuestion == 10){
+		$(".game").hide();
+		$(".character-picture").hide();
+		$(".question-status").hide();
+		$(".results").show();
+		return;
+	}
+	
 		for (var i= 0; i < questionArr[currentQuestion].answers.length; i++){
 		
 		var container = $('#q'+i).next(); //siblings()[0];
@@ -28,7 +42,8 @@ $(document).ready(function(){
 
 		}
 	
-	$(".character-picture .pic-container").append('<img src='+questionArr[currentQuestion].image+'>');
+	$(".character-picture .pic-container").html('<img src='+questionArr[currentQuestion].image+'>');
+	
 	
 	
 	} //end updateView
@@ -37,19 +52,51 @@ $(document).ready(function(){
 	
 $(".startButton").click(function(){
 	
-	
+	$(".results").hide();
+	$(".question-status").show();
 	updateView();
 	$(".game").show();
+	$(".character-picture").show();
+	$(".intro-screen").hide();
 	
 	
 });
 
 $(".nextButton").click(function(){
 	
+	if(checkQuestion() == false) return;
 	currentQuestion++;
 	updateView();
-	$(".character-picture .pic-container > img").remove();
-	$(".character-picture .pic-container").append('<img src='+questionArr[currentQuestion].image+'>');
+	// $(".character-picture .pic-container > img").remove();
+	$(".character-picture .pic-container").html('<img src='+questionArr[currentQuestion].image+'>');
+	
+	
+});
+
+
+function checkQuestion(){
+	
+		if($("input:checked").val()){
+			if ($("input:checked").val() == questionArr[currentQuestion].correctAnswer){
+				countCorrect++;
+			}	
+			return true;
+		}
+		else
+		{
+			alert("Please pick a choice!");
+			return false;
+		}
+		
+	}
+	
+$(".tryAgain").click(function(){
+	
+	currentQuestion = 0;
+	countCorrect = 0;
+	
+	$(".intro-screen").show();
+	$(".results").hide();
 	
 	
 });
